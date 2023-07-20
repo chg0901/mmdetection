@@ -19,7 +19,6 @@ from mmengine.utils import track_iter_progress
 from mmdet.registry import VISUALIZERS
 from mmdet.apis import init_detector, inference_detector
 
-
 # Specify the path to model config and checkpoint file
 config_file = 'configs/faster_rcnn/faster-rcnn_r50-fpn_1x_coco.py'
 checkpoint_file = 'checkpoints/faster_rcnn_r50_fpn_1x_coco_20200130-047c8118.pth'
