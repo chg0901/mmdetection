@@ -41,7 +41,6 @@ result = inference_detector(model, img)
 # Show the results
 img = mmcv.imconvert(img, 'bgr', 'rgb')
 
-
 visualizer.add_datasample(
     'result',
     img,
