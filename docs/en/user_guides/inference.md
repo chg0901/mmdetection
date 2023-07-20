@@ -32,13 +32,13 @@ visualizer = VISUALIZERS.build(model.cfg.visualizer)
 # The dataset_meta is loaded from the checkpoint and
 # then pass to the model in init_detector
 visualizer.dataset_meta = model.dataset_meta
-# Ttest a single image and show the results
 
-img = 'test.jpg'  # or img = mmcv.imread(img), which will only load it once
+# Test a single image and show the results
+img_path = 'test.jpg'
+img = mmcv.imread(img_path)
 result = inference_detector(model, img)
 
 # Show the results
-img = mmcv.imread(img)
 img = mmcv.imconvert(img, 'bgr', 'rgb')
 
 
